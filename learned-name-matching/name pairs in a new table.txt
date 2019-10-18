@@ -1,8 +1,0 @@
-create table names_concat_merged_pairs(id TEXT, name1 TEXT, name2 TEXT)
-
-insert into names_concat_merged_pairs
-select * from names_concat_merged
-
-delete from names_concat_merged_pairs
-where name1 is NULL
-or name2 is NULL

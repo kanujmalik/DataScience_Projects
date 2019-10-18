@@ -1,4 +1,0 @@
-create table names_concat(id TEXT, name TEXT)
-
-insert into names_concat
-select id, (given || " " || family) from names

@@ -1,1 +1,0 @@
-select nat, count(*) from names group by nat order by count(*) DESC

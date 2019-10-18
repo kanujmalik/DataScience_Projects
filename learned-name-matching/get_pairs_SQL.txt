@@ -1,8 +1,0 @@
-SELECT t.* 
-  FROM Table1 t JOIN
-(
-  SELECT guid
-    FROM Table1
-   GROUP BY guid
-  HAVING COUNT(*) = 2
-) q ON t.guid = q.guid
