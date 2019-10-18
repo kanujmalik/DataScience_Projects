@@ -1,0 +1,4 @@
+df.to_pickle(file_name)  # where to save it, usually as a .pkl
+
+
+df = pd.read_pickle(file_name)
